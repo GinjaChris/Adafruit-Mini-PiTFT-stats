@@ -5,6 +5,7 @@ A modification of https://github.com/adafruit/Adafruit_CircuitPython_RGB_Display
 The rest of the setup can be found in https://learn.adafruit.com/adafruit-mini-pitft-135x240-color-tft-add-on-for-raspberry-pi/python-setup, this is just a script to display some basic stats.
 
 To get this to work reliably at boot I had to call it via crontab "crontab -e", then add in:
+
 @reboot sleep 10 && /home/username/stats.py
 
 
